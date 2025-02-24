@@ -3,6 +3,8 @@ name: Docker Image CI
 on:
   push:
     branches: [ "master" ]
+    tags:
+      - 'v*'  # Se déclenche pour les tags qui commencent par 'v' (ex: v1.0.0)
   pull_request:
     branches: [ "master" ]
 
@@ -34,8 +36,9 @@ jobs:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         tags: |
           type=raw,value=latest
-          type=sha,format=short
+          type=ref,event=tag,pattern={{version}}
           type=ref,event=branch
+          type=sha,format=short
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
