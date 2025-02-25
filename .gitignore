@@ -1,3 +1,14 @@
 /logs
 .venv
 .vscode
+# Fichiers de logs
+*.log
+
+# Dossiers temporaires
+tmp/
+
+# Dossiers de build
+/build/
+
+# Fichiers temporaires
+*.tmp 
