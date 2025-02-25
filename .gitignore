@@ -1,3 +1,14 @@
 /logs
 .venv
 .vscode
+
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers temporaires
+*.tmp
+
+# Ignorer les fichiers de build
+/build/
+
+tmp/
