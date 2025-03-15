@@ -1,1 +1,31 @@
+# Fichiers d'environnement
+.env
+.venv
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers Git
+.git
+
+# Fichiers spécifiques à macOS
+.DS_Store
+
+# Fichiers spécifiques à l'IDE VSCode
+.vscode/
+
+# Fichiers et dossiers générés par Docker
+build/
+tmp/
+*.log
+
+# Fichiers générés par le processus de build
+*.tmp
+node_modules/
+
+# Fichiers temporaires d'éditeur (ex. Vim, Emacs)
+*.swp
 
